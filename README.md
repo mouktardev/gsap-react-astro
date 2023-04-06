@@ -22,7 +22,7 @@ const animationTypes: animationStateValues="FadeIn"
 
 export default function Example() {
     const animationValueHolder = useStore(animationState)
-    <Animate className='' anim={animationValueHolder}>
+    <Animate anim={animationValueHolder}>
         <Card />
     </Animate>
 }
@@ -38,7 +38,7 @@ const animationTypes: animationStateValues[] = ["FadeIn", "FadeOut"]
 export default function Example() {
     const animationValueHolder = useStore(animationState)
     <button type="button" onClick={animationStateUpdate(animationTypes[1])}
-    <Animate className='' anim={animationValueHolder}>
+    <Animate anim={animationValueHolder}>
         <Card />
     </Animate>
 }

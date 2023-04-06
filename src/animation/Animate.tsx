@@ -4,7 +4,7 @@ import { animationStateUpdate, animationStateValues } from './store';
 
 type Props = {
     children: ReactNode
-    className: string
+    className?: string
     anim: animationStateValues
 }
 

@@ -19,7 +19,7 @@ export default function Grid() {
                     <button key={index} type="button" className="p-5 text-white font-bold text-lg" onClick={() => animationStateUpdate(animation)}>{animation}</button>
                 ))}
             </ul>
-            <Animate className='' anim={animationValueHolder}>
+            <Animate anim={animationValueHolder}>
                 <Card />
             </Animate>
         </section>
