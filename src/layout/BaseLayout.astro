@@ -1,5 +1,6 @@
 ---
 import Footer from "@components/Footer";
+import Nav from "@components/Nav";
 import "@styles/global.css";
 
 const defaultSEO = {
@@ -8,13 +9,14 @@ const defaultSEO = {
 	description: "A demo of Gsap using React in Astro",
 	type: "website",
 	image: "/asset/Banner.png",
+	canonicalURL: Astro.url,
 };
 const { SEO = defaultSEO } = Astro.props;
 ---
 
 <html class="scroll-smooth" lang="en">
 	<head>
-		<!-- <link rel="canonical" href={url} /> -->
+		<link rel="canonical" href={SEO.canonicalURL.href} />
 		<meta name="author" content={SEO.author} />
 		<meta name="description" content={SEO.description} />
 		<meta charset="utf-8" />
@@ -25,7 +27,7 @@ const { SEO = defaultSEO } = Astro.props;
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:type" content={SEO.type} />
-		<!-- <meta property="og:url" content={url} /> -->
+		<meta property="og:url" content={SEO.canonicalURL.href} />
 		<meta property="og:title" content={SEO.title} />
 		<meta property="og:description" content={SEO.description} />
 		<meta property="og:image" content={SEO.image} />
@@ -63,7 +65,9 @@ const { SEO = defaultSEO } = Astro.props;
 			>
 			</div>
 		</div>
-		<header></header>
+		<header>
+			<Nav />
+		</header>
 		<slot />
 		<Footer version={Astro.generator} />
 	</body>

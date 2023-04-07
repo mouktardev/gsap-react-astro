@@ -2,11 +2,10 @@ import Animate from '@animation/Animate';
 import { animationState, animationStateUpdate, animationStateValues } from "@animation/store";
 import { useStore } from '@nanostores/react';
 import { useEffect } from 'react';
-import Card from './Card';
 
 const animationTypes: animationStateValues[] = ["FadeIn", "FadeOut"]
 
-export default function Grid() {
+export default function FadeInFadeOut() {
     const animationValueHolder = useStore(animationState)
 
     useEffect(() => {
@@ -14,7 +13,10 @@ export default function Grid() {
     }, [animationValueHolder])
 
     return (
-        <section className="container mx-auto max-w-[800px] my-auto">
+        <section className="container mx-auto max-w-[800px]">
+            <div className='overflow-hidden border border-neutral-800 dark:border-white my-10'>
+                <img className="w-full object-cover" src="/asset/Banner.png" alt="banner" />
+            </div>
             <div className='flex justify-center items-center gap-5 p-4'>
                 <ul className='space-y-5'>
                     {animationTypes.map((animation, index) => (
@@ -26,5 +28,14 @@ export default function Grid() {
                 </Animate>
             </div>
         </section>
+    )
+}
+
+
+function Card() {
+    return (
+        <div className="max-w-[15rem] p-2 rounded-xl backdrop-blur-md bg-white/30 dark:bg-black/30 shadow-3xl dark:shadow-none">
+            <h1 className='text-white font-bold text-6xl p-4'>Hello World</h1>
+        </div>
     )
 }
