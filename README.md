@@ -12,9 +12,25 @@ This Project is inspired by this artical form [Gsap](https://greensock.com/react
 │   └── Animate.tsx
 
 ```
+
+In store you manage animation state and create your animation types, here am using [Nano Stores](https://github.com/nanostores/nanostores)
+
+```typescript
+import { atom } from 'nanostores';
+
+export type animationStateValues = undefined | 'FadeIn' | 'FadeOut'
+
+export const animationState = atom<animationStateValues>()
+
+export function animationStateUpdate(animation: animationStateValues) {
+    animationState.set(animation);
+}
+```
+
+
 Here an example using `Animate.tsx` component:
 
-```
+```typescript
 import { animationState, animationStateValues } from "@animation/store";
 import { useStore } from '@nanostores/react';
 
@@ -29,7 +45,7 @@ export default function Example() {
 ``` 
 you can use `animationStateUpdate` from `store.ts` to update the animation
 
-```
+```typescript
 import { animationState, animationStateValues } from "@animation/store";
 import { useStore } from '@nanostores/react';
 
@@ -37,7 +53,7 @@ const animationTypes: animationStateValues[] = ["FadeIn", "FadeOut"]
 
 export default function Example() {
     const animationValueHolder = useStore(animationState)
-    <button type="button" onClick={animationStateUpdate(animationTypes[1])}
+    <button type="button" onClick={animationStateUpdate(animationTypes[1])}/>
     <Animate anim={animationValueHolder}>
         <Card />
     </Animate>
