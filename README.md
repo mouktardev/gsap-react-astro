@@ -3,7 +3,7 @@
 
 This Project is inspired by this artical form [Gsap](https://greensock.com/react), which outlined a method for integrating their animation framework into React. I set out to create a React component that could take animation states as parameters, making it effortless to animate any children within the component. With this approach, the animation process becomes simplified and more efficient.
 
-## animation folder
+## Animation folder
 
 ```
 ├── animation/
