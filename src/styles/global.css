@@ -3,11 +3,13 @@
 @tailwind utilities;
 @layer utilities {
 	.mask {
-		-webkit-mask: linear-gradient(to left,
-				rgba(255, 255, 255, 0) 0%,
-				rgba(255, 255, 255, 1) 10%,
-				rgba(255, 255, 255, 1) 90%,
-				rgba(255, 255, 255, 0) 100%);
+		-webkit-mask: linear-gradient(
+			to left,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 1) 10%,
+			rgba(255, 255, 255, 1) 90%,
+			rgba(255, 255, 255, 0) 100%
+		);
 	}
 }
 
@@ -17,16 +19,16 @@
 
 //used in Tailwind as extended backgroundImage
 .gradientDark {
-	backgroundColor: "#2D033B";
-	backgroundImage: `
-	radial-gradient(circle at 21% 33%, #03001C, transparent 50%),
-	radial-gradient(ellipse at 50% 32%, #301E67, transparent 50%),
-	radial-gradient(ellipse at 26% 83%, #2D033B, transparent 50%)`,
+	backgroundcolor: "#2D033B";
+	backgroundimage: `
+			radial-gradient(circle at 21% 33%, #03001c, transparent 50%),
+		radial-gradient(ellipse at 50% 32%, #301e67, transparent 50%),
+		radial-gradient(ellipse at 26% 83%, #2d033b, transparent 50%) `;
 }
-.gradientLight{
-	backgroundColor: "#FEFCF3";
-	backgroundImage: `
-	radial-gradient(circle at 21% 33%, #FEFCF3, transparent 50%),
-	radial-gradient(ellipse at 50% 32%, #F0DBDB, transparent 50%),
-	radial-gradient(ellipse at 26% 83%, #DBA39A, transparent 50%)`,
+.gradientLight {
+	backgroundcolor: "#FEFCF3";
+	backgroundimage: `
+			radial-gradient(circle at 21% 33%, #fefcf3, transparent 50%),
+		radial-gradient(ellipse at 50% 32%, #f0dbdb, transparent 50%),
+		radial-gradient(ellipse at 26% 83%, #dba39a, transparent 50%) `;
 }

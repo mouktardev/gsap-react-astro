@@ -1,9 +1,9 @@
-import { atom } from 'nanostores';
+import { atom } from "nanostores";
 
-export type animationStateValues = undefined | 'FadeIn' | 'FadeOut'
+export type animationStateValues = undefined | "FadeIn" | "FadeOut";
 
-export const animationState = atom<animationStateValues>()
+export const animationState = atom<animationStateValues>();
 
 export function animationStateUpdate(animation: animationStateValues) {
-    animationState.set(animation);
+	animationState.set(animation);
 }

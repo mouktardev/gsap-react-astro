@@ -2,12 +2,10 @@ import * as Icons from "./Icons";
 
 type Props = {};
 
-export default function PreviewIcons({ }: Props) {
+export default function PreviewIcons({}: Props) {
 	return (
 		<div>
-			<div
-				className="w-60 flex gap-3 items-center justify-center flex-wrap"
-			>
+			<div className="w-60 flex gap-3 items-center justify-center flex-wrap">
 				<div>
 					<Icons.AirPlay className="w-7 h-7 sm:w-5 sm:h-5 text-neutral-900 dark:text-white" />
 				</div>

@@ -7,13 +7,13 @@ const defaultSEO = {
 	title: "Gsap | React",
 	description: "A demo of Gsap using React in Astro",
 	type: "website",
+	image: "/asset/Banner.png",
 };
 const { SEO = defaultSEO } = Astro.props;
 ---
 
 <html class="scroll-smooth" lang="en">
 	<head>
-		<title>{SEO.title}</title>
 		<!-- <link rel="canonical" href={url} /> -->
 		<meta name="author" content={SEO.author} />
 		<meta name="description" content={SEO.description} />
@@ -28,11 +28,12 @@ const { SEO = defaultSEO } = Astro.props;
 		<!-- <meta property="og:url" content={url} /> -->
 		<meta property="og:title" content={SEO.title} />
 		<meta property="og:description" content={SEO.description} />
-		<meta property="og:image" content="/avatar/mouktar.png" />
+		<meta property="og:image" content={SEO.image} />
+		<title>{SEO.title}</title>
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={SEO.title} />
 		<meta name="twitter:description" content={SEO.description} />
-		<meta name="twitter:image" content={`/asset/Banner.png`} />
+		<meta name="twitter:image" content={SEO.image} />
 		<link rel="icon" type="image/x-icon" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

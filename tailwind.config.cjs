@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 
@@ -25,10 +25,14 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-				"gradient-dark": "radial-gradient(ellipse at 21% 33%, #03001C, transparent 50%),radial-gradient(ellipse at 50% 32%, #301E67, transparent 50%),radial-gradient(ellipse at 26% 83%, #2D033B, transparent 50%)",
-				"gradient-light": "radial-gradient(ellipse at 21% 33%, #E3DFFD, transparent 50%),radial-gradient(ellipse at 50% 32%, #E5D1FA, transparent 50%),radial-gradient(ellipse at 26% 83%, #FFF4D2, transparent 50%)",
-				"gradient-lines-dark": "linear-gradient(90deg, transparent 49%, #431E8C 49% 51%, transparent 51%) , linear-gradient(-180deg, transparent 49%, #431E8C 49% 51%, transparent 51%)",
-				"gradient-lines-light": "linear-gradient(90deg, transparent 49%, #DC8449 49% 51%, transparent 51%) , linear-gradient(-180deg, transparent 49%, #DC8449 49% 51%, transparent 51%)"
+				"gradient-dark":
+					"radial-gradient(ellipse at 21% 33%, #03001C, transparent 50%),radial-gradient(ellipse at 50% 32%, #301E67, transparent 50%),radial-gradient(ellipse at 26% 83%, #2D033B, transparent 50%)",
+				"gradient-light":
+					"radial-gradient(ellipse at 21% 33%, #E3DFFD, transparent 50%),radial-gradient(ellipse at 50% 32%, #E5D1FA, transparent 50%),radial-gradient(ellipse at 26% 83%, #FFF4D2, transparent 50%)",
+				"gradient-lines-dark":
+					"linear-gradient(90deg, transparent 49%, #431E8C 49% 51%, transparent 51%) , linear-gradient(-180deg, transparent 49%, #431E8C 49% 51%, transparent 51%)",
+				"gradient-lines-light":
+					"linear-gradient(90deg, transparent 49%, #DC8449 49% 51%, transparent 51%) , linear-gradient(-180deg, transparent 49%, #DC8449 49% 51%, transparent 51%)",
 			},
 			zIndex: {
 				"-1": "-1",
