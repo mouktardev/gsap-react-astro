@@ -1,6 +1,6 @@
 ---
 import Footer from "@components/Footer";
-import Nav from "@components/Nav";
+import ThemeToggle from "@components/ThemeToggle";
 import "@styles/global.css";
 
 const defaultSEO = {
@@ -65,8 +65,8 @@ const { SEO = defaultSEO } = Astro.props;
 			>
 			</div>
 		</div>
-		<header>
-			<Nav />
+		<header class="p-5">
+			<ThemeToggle client:load />
 		</header>
 		<slot />
 		<Footer version={Astro.generator} />
