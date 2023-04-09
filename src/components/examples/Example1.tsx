@@ -16,7 +16,7 @@ export default function Example1() {
             <div className='overflow-hidden border dark:border-white my-10'>
                 <img className="w-full object-cover" src="/asset/Banner.png" alt="banner" />
             </div>
-            <div className='flex justify-center items-center gap-5 p-4'>
+            <div className='flex items-center sm:p-4 gap-5 '>
                 <ul className='space-y-5'>
                     {animationTypes.map((animation, index) => (
                         <button key={index} type="button" className="w-full p-5 border border-neutral-800 dark:border-white text-neutral-800 dark:text-white font-bold text-lg sm:text-base" onClick={() => animationStateUpdate(animation)}>{animation}</button>
@@ -32,7 +32,7 @@ export default function Example1() {
 
 function Card() {
     return (
-        <div className="max-w-[15rem] p-2 rounded-xl backdrop-blur-md bg-white/30 dark:bg-black/30 shadow-3xl dark:shadow-none">
+        <div className="p-2 rounded-xl backdrop-blur-md bg-white/30 dark:bg-black/30 shadow-3xl dark:shadow-none">
             <h1 className='text-neutral-800 dark:text-white font-bold text-6xl p-4'>Hello World</h1>
         </div>
     )
