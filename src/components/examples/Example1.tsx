@@ -1,16 +1,15 @@
 import Animate from '@animation/Animate';
 import { animationState, animationStateUpdate, animationStateValues } from "@animation/store";
 import { useStore } from '@nanostores/react';
-import { useEffect } from 'react';
 
-const animationTypes: animationStateValues[] = ["FadeIn", "FadeOut"]
+const animationTypes: animationStateValues[] = ["FadeIn", "FadeOut", "TextReplace"]
 
-export default function FadeInFadeOut() {
+export default function Example1() {
     const animationValueHolder = useStore(animationState)
 
-    useEffect(() => {
-        console.log(animationValueHolder);
-    }, [animationValueHolder])
+    // useEffect(() => {
+    //     console.log(animationValueHolder);
+    // }, [animationValueHolder])
 
     return (
         <section className="container mx-auto max-w-[800px]">
@@ -30,7 +29,6 @@ export default function FadeInFadeOut() {
         </section>
     )
 }
-
 
 function Card() {
     return (

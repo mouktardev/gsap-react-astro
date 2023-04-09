@@ -1,6 +1,6 @@
 import { atom } from "nanostores";
 
-export type animationStateValues = undefined | "FadeIn" | "FadeOut";
+export type animationStateValues = undefined | "FadeIn" | "FadeOut" | "TextReplace";
 
 export const animationState = atom<animationStateValues>();
 

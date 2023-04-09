@@ -24,7 +24,7 @@ export default function ThemeToggle() {
 				gsap.to(el.current, { x: 35 })
 			}
 		})
-		return () => ctx.revert();
+		return () => ctx.revert(); 
 	}, [isDark]);
 
 	return (
