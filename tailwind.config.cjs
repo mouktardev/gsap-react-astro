@@ -30,7 +30,7 @@ module.exports = {
 				"gradient-light":
 					"radial-gradient(ellipse at 21% 33%, #E3DFFD, transparent 50%),radial-gradient(ellipse at 50% 32%, #E5D1FA, transparent 50%),radial-gradient(ellipse at 26% 83%, #FFF4D2, transparent 50%)",
 				"gradient-lines-dark":
-					"linear-gradient(90deg, transparent 49%, #431E8C 49% 51%, transparent 51%) , linear-gradient(-180deg, transparent 49%, #431E8C 49% 51%, transparent 51%)",
+					"linear-gradient(90deg, transparent 49%, rgb(115 115 115 / 0.3) 49% 51%, transparent 51%) , linear-gradient(-180deg, transparent 49%, rgb(115 115 115 / 0.3) 49% 51%, transparent 51%)",
 				"gradient-lines-light":
 					"linear-gradient(90deg, transparent 49%, #DC8449 49% 51%, transparent 51%) , linear-gradient(-180deg, transparent 49%, #DC8449 49% 51%, transparent 51%)",
 			},

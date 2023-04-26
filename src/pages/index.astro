@@ -1,8 +1,10 @@
 ---
 import Example1 from "@components/examples/Example1";
+import Example2 from "@components/examples/Example2";
 import BaseLayout from "../layout/BaseLayout.astro";
 ---
 
 <BaseLayout>
 	<Example1 client:only />
+	<Example2 client:only />
 </BaseLayout>
